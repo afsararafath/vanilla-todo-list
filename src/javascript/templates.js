@@ -22,9 +22,10 @@ export function createDiv({ id, className }) {
   return div;
 }
 
-export function createCheckbox({ id }) {
+export function createCheckbox({ id, className }) {
   const checkbox = document.createElement("input");
   checkbox.id = id;
+  checkbox.className = className;
   checkbox.type = "checkbox";
   return checkbox;
 }

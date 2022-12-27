@@ -1,1 +1,169 @@
-.listItem{display:flex;padding:16px;text-align:center}
+.completedText {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+
+.listItem {
+    display: flex;
+    border: 2px solid black;
+    width: 600px;
+    border-radius: 8px;
+    margin: 2px;
+    background-color: rgb(190, 255, 170);
+    color: black;
+}
+
+.checkBox {
+    align-self: center;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+
+#doneButton {
+    color: black;
+    background-color: #39bd39;
+    border: black;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 1px;
+    outline: none;
+}
+
+#deleteButton {
+    color: black;
+    background-color: #39bd39;
+    border-radius: 4px;
+    margin: 1px;
+}
+
+#todoText {
+    width: 600px;
+    word-break: break-word;
+    margin-left: 5px;
+    font-size: 14px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.completedItems {
+    background-color: rgb(30, 32, 30);
+}
+
+#toDoList {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    margin: 0px;
+}
+
+#headerContainer {
+    background-color: #189c18;
+    padding-left: 100px;
+}
+
+#textInput {
+    margin-top: 3px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    font-size: 16px;
+    background-color: #fffffff1;
+    outline: none;
+}
+
+
+#addButton {
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+#toggleAllButton {
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+#deleteCompletedButton {
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+#deleteSelectedButton {
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+#deleteAllButton {
+    color: #ffffff;
+    background-color: #303030;
+    border: 1px solid black;
+    border-radius: 10px;
+    min-width: 100px;
+    height: 55px;
+    cursor: pointer;
+    margin: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+#addButton:hover,
+#toggleAllButton:hover,
+#deleteCompletedButton:hover,
+#deleteSelectedButton:hover,
+#deleteAllButton:hover {
+    color: #56ff3b;
+    background-color: #202020;
+    font-size: 14px;
+}
+
+#listItems {
+    flex-flow: column wrap;
+    background: #303030;
+    padding-left: 100px;
+}
+
+html {
+    background-color: #303030;
+}

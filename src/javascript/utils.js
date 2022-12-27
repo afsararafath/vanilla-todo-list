@@ -1,9 +1,5 @@
 import { createListItem } from './listItem';
 
-export function getTodoListContainer() {
-    return document.getElementById('toDoList')
-}
-
 export function getTextInput() {
     return document.getElementById('textInput')
 }
@@ -89,3 +85,27 @@ export function addListItemOnEnter(event) {
         addListItem();
     }
 }
+
+export function deleteCurrentItem(event) {
+    event.target.parentElement.remove();
+}
+
+export function taskCompleted(event) {
+    if (!event.target.parentElement.classList.contains("completedItems")) {
+        event.target.parentElement.querySelector(".todoText").classList.add("completedText");
+        event.target.parentElement.classList.add("completedItems");
+        event.target.innerHTML = "Un-Done";
+    }
+    else {
+        event.target.parentElement.classList.remove("completedItems");
+        event.target.parentElement.querySelector(".todoText").classList.remove("completedText");
+        event.target.innerHTML = "Done";
+    }
+}
+
+
+export function deleteCompletedItems() {
+    const completedItems = document.querySelectorAll(".completedItems");
+    completedItems.forEach(element => element.remove());
+}
+
